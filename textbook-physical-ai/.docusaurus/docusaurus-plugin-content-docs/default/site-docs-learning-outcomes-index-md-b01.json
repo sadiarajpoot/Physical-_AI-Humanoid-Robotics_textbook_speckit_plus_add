@@ -1,0 +1,26 @@
+{
+  "id": "learning-outcomes/index",
+  "title": "Learning Outcomes",
+  "description": "Upon successful completion of this course on Physical AI & Humanoid Robotics, students will be able to:",
+  "source": "@site/docs/learning-outcomes/index.md",
+  "sourceDirName": "learning-outcomes",
+  "slug": "/learning-outcomes/",
+  "permalink": "/docs/learning-outcomes/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/your-project-name/tree/main/docs/docs/learning-outcomes/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Learning Outcomes"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Week 9: Human-Robot Interaction and Social Robotics",
+    "permalink": "/docs/weekly-breakdown/week-9"
+  },
+  "next": {
+    "title": "Hardware Requirements",
+    "permalink": "/docs/hardware/"
+  }
+}

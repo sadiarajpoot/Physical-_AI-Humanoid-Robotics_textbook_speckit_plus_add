@@ -1,0 +1,26 @@
+{
+  "id": "technical-examples/gazebo-examples",
+  "title": "Gazebo Setup Examples",
+  "description": "Overview",
+  "source": "@site/docs/technical-examples/gazebo-examples.md",
+  "sourceDirName": "technical-examples",
+  "slug": "/technical-examples/gazebo-examples",
+  "permalink": "/docs/technical-examples/gazebo-examples",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/your-project-name/tree/main/docs/docs/technical-examples/gazebo-examples.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Gazebo Setup Examples"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Assessments",
+    "permalink": "/docs/assessments/"
+  },
+  "next": {
+    "title": "NVIDIA Isaac Examples",
+    "permalink": "/docs/technical-examples/isaac-examples"
+  }
+}

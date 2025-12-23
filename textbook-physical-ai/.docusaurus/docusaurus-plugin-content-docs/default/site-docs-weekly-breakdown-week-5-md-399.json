@@ -1,0 +1,26 @@
+{
+  "id": "weekly-breakdown/week-5",
+  "title": "Week 5: Vision-Language-Action Systems",
+  "description": "Overview",
+  "source": "@site/docs/weekly-breakdown/week-5.md",
+  "sourceDirName": "weekly-breakdown",
+  "slug": "/weekly-breakdown/week-5",
+  "permalink": "/docs/weekly-breakdown/week-5",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/your-project-name/tree/main/docs/docs/weekly-breakdown/week-5.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Week 5: Vision-Language-Action Systems"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Week 4: AI-Robot Brain with NVIDIA Isaac™",
+    "permalink": "/docs/weekly-breakdown/week-4"
+  },
+  "next": {
+    "title": "Week 6: Humanoid Kinematics and Dynamics",
+    "permalink": "/docs/weekly-breakdown/week-6"
+  }
+}

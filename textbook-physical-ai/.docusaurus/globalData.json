@@ -1,0 +1,205 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "assessments/index",
+              "path": "/docs/assessments/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "capstone/index",
+              "path": "/docs/capstone/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "hardware/index",
+              "path": "/docs/hardware/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "learning-outcomes/index",
+              "path": "/docs/learning-outcomes/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/module-1",
+              "path": "/docs/modules/module-1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/module-2",
+              "path": "/docs/modules/module-2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/module-3",
+              "path": "/docs/modules/module-3",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/module-4",
+              "path": "/docs/modules/module-4",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "overview/index",
+              "path": "/docs/overview/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "overview/why-physical-ai",
+              "path": "/docs/overview/why-physical-ai",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "technical-examples/gazebo-examples",
+              "path": "/docs/technical-examples/gazebo-examples",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "technical-examples/isaac-examples",
+              "path": "/docs/technical-examples/isaac-examples",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "technical-examples/ros2-examples",
+              "path": "/docs/technical-examples/ros2-examples",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "technical-examples/vla-examples",
+              "path": "/docs/technical-examples/vla-examples",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/congratulations",
+              "path": "/docs/tutorial-basics/congratulations"
+            },
+            {
+              "id": "tutorial-basics/create-a-blog-post",
+              "path": "/docs/tutorial-basics/create-a-blog-post"
+            },
+            {
+              "id": "tutorial-basics/create-a-document",
+              "path": "/docs/tutorial-basics/create-a-document"
+            },
+            {
+              "id": "tutorial-basics/create-a-page",
+              "path": "/docs/tutorial-basics/create-a-page"
+            },
+            {
+              "id": "tutorial-basics/deploy-your-site",
+              "path": "/docs/tutorial-basics/deploy-your-site"
+            },
+            {
+              "id": "tutorial-basics/markdown-features",
+              "path": "/docs/tutorial-basics/markdown-features"
+            },
+            {
+              "id": "tutorial-extras/manage-docs-versions",
+              "path": "/docs/tutorial-extras/manage-docs-versions"
+            },
+            {
+              "id": "tutorial-extras/translate-your-site",
+              "path": "/docs/tutorial-extras/translate-your-site"
+            },
+            {
+              "id": "weekly-breakdown/week-1",
+              "path": "/docs/weekly-breakdown/week-1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "weekly-breakdown/week-10",
+              "path": "/docs/weekly-breakdown/week-10",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "weekly-breakdown/week-11",
+              "path": "/docs/weekly-breakdown/week-11",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "weekly-breakdown/week-12",
+              "path": "/docs/weekly-breakdown/week-12",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "weekly-breakdown/week-13",
+              "path": "/docs/weekly-breakdown/week-13",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "weekly-breakdown/week-2",
+              "path": "/docs/weekly-breakdown/week-2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "weekly-breakdown/week-3",
+              "path": "/docs/weekly-breakdown/week-3",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "weekly-breakdown/week-4",
+              "path": "/docs/weekly-breakdown/week-4",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "weekly-breakdown/week-5",
+              "path": "/docs/weekly-breakdown/week-5",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "weekly-breakdown/week-6",
+              "path": "/docs/weekly-breakdown/week-6",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "weekly-breakdown/week-7",
+              "path": "/docs/weekly-breakdown/week-7",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "weekly-breakdown/week-8",
+              "path": "/docs/weekly-breakdown/week-8",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "weekly-breakdown/week-9",
+              "path": "/docs/weekly-breakdown/week-9",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "Introduction"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  },
+  "docusaurus-plugin-chatbot": {
+    "default": {
+      "chatbotEnabled": true
+    }
+  }
+}

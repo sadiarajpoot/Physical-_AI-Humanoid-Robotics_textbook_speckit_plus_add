@@ -1,0 +1,26 @@
+{
+  "id": "weekly-breakdown/week-1",
+  "title": "Week 1: Introduction to Physical AI",
+  "description": "Overview",
+  "source": "@site/docs/weekly-breakdown/week-1.md",
+  "sourceDirName": "weekly-breakdown",
+  "slug": "/weekly-breakdown/week-1",
+  "permalink": "/docs/weekly-breakdown/week-1",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/your-project-name/tree/main/docs/docs/weekly-breakdown/week-1.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Week 1: Introduction to Physical AI"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Why Physical AI Matters",
+    "permalink": "/docs/overview/why-physical-ai"
+  },
+  "next": {
+    "title": "Week 10: Learning and Adaptation in Humanoid Robots",
+    "permalink": "/docs/weekly-breakdown/week-10"
+  }
+}

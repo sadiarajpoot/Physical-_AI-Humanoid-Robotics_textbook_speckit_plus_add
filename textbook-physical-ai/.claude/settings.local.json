@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git rev-parse --git-dir)",
+      "Bash(.specify/scripts/powershell/check-prerequisites.ps1 -Json -RequireTasks -IncludeTasks)",
+      "Bash(npx docusaurus start --port 3003)",
+      "Bash(powershell -Command \"Get-Content ''C:\\\\Users\\\\SADIAK~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Sadia-Khan-OneDrive-Documents-hackthon-textbook-physical-ai\\\\tasks\\\\b3a87f0.output''\")",
+      "Bash(npx docusaurus start --port 3010)"
+    ]
+  }
+}

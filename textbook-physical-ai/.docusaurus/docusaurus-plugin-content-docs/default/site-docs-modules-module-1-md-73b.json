@@ -1,0 +1,26 @@
+{
+  "id": "modules/module-1",
+  "title": "Module 1: The Robotic Nervous System (ROS 2)",
+  "description": "Overview",
+  "source": "@site/docs/modules/module-1.md",
+  "sourceDirName": "modules",
+  "slug": "/modules/module-1",
+  "permalink": "/docs/modules/module-1",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/your-project-name/tree/main/docs/docs/modules/module-1.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Module 1: The Robotic Nervous System (ROS 2)"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Hardware Requirements",
+    "permalink": "/docs/hardware/"
+  },
+  "next": {
+    "title": "Module 2: The Digital Twin (Gazebo & Unity)",
+    "permalink": "/docs/modules/module-2"
+  }
+}

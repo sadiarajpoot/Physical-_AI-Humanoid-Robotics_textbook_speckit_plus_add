@@ -1,0 +1,26 @@
+{
+  "id": "weekly-breakdown/week-9",
+  "title": "Week 9: Human-Robot Interaction and Social Robotics",
+  "description": "Overview",
+  "source": "@site/docs/weekly-breakdown/week-9.md",
+  "sourceDirName": "weekly-breakdown",
+  "slug": "/weekly-breakdown/week-9",
+  "permalink": "/docs/weekly-breakdown/week-9",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/your-project-name/tree/main/docs/docs/weekly-breakdown/week-9.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Week 9: Human-Robot Interaction and Social Robotics"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Week 8: Humanoid Manipulation and Dexterous Control",
+    "permalink": "/docs/weekly-breakdown/week-8"
+  },
+  "next": {
+    "title": "Learning Outcomes",
+    "permalink": "/docs/learning-outcomes/"
+  }
+}

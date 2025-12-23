@@ -1,0 +1,141 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+env.bak/
+venv.bak/
+.env
+*.env
+.env.local
+.venv/
+.ENV
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.coverage.xml
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git/modules/
+.pytest_cache/
+.pytest/
+.mypy_cache/
+.hypothesis/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+env.bak/
+.ENV/
+
+# FastAPI / Uvicorn
+*.db
+*.sqlite
+*.sqlite3
+
+# UV specific
+.uv-cache/
+.uv-lock/
+
+# Dependencies
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.cover
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+nbproject/
+nbbuild/
+dist/
+dist-*
+build/
+*.dmg
+*.zip
+*.tar.gz
+*.tar.bz2
+*.gz
+*.bz2
+*.xz
+*.lzma
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.cov/
+.coverage.*
+
+# Environment variables
+.env
+.env.local
+.env.dev
+.env.test
+.env.prod
+
+# Backend specific
+backend/__pycache__/
+backend/*.pyc
+backend/.env
+backend/.venv/
+backend/venv/
+backend/env/
+
+# Frontend specific
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+.nyc_output
+coverage/
+*.min.js
+*.min.css
+*.bundle.js
+*.bundle.css
+.eslintcache
+.pnp.*
+.pnp.js
+.yarn/
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime
+db.json
+*.local

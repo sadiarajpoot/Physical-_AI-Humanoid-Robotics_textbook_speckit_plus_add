@@ -1,0 +1,26 @@
+{
+  "id": "overview/index",
+  "title": "Quarter Overview",
+  "description": "Welcome to the comprehensive textbook on Physical AI & Humanoid Robotics. This quarter-long course is designed to provide you with a deep understanding of the principles and applications of physical artificial intelligence in humanoid robotics.",
+  "source": "@site/docs/overview/index.md",
+  "sourceDirName": "overview",
+  "slug": "/overview/",
+  "permalink": "/docs/overview/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/your-project-name/tree/main/docs/docs/overview/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Quarter Overview"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "Why Physical AI Matters",
+    "permalink": "/docs/overview/why-physical-ai"
+  }
+}

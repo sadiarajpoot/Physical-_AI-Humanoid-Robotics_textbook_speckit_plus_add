@@ -1,0 +1,26 @@
+{
+  "id": "weekly-breakdown/week-7",
+  "title": "Week 7: Humanoid Locomotion and Walking",
+  "description": "Overview",
+  "source": "@site/docs/weekly-breakdown/week-7.md",
+  "sourceDirName": "weekly-breakdown",
+  "slug": "/weekly-breakdown/week-7",
+  "permalink": "/docs/weekly-breakdown/week-7",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/your-project-name/tree/main/docs/docs/weekly-breakdown/week-7.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Week 7: Humanoid Locomotion and Walking"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Week 6: Humanoid Kinematics and Dynamics",
+    "permalink": "/docs/weekly-breakdown/week-6"
+  },
+  "next": {
+    "title": "Week 8: Humanoid Manipulation and Dexterous Control",
+    "permalink": "/docs/weekly-breakdown/week-8"
+  }
+}

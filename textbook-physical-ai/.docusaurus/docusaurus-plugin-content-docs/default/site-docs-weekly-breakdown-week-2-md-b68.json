@@ -1,0 +1,26 @@
+{
+  "id": "weekly-breakdown/week-2",
+  "title": "Week 2: ROS 2 Fundamentals",
+  "description": "Overview",
+  "source": "@site/docs/weekly-breakdown/week-2.md",
+  "sourceDirName": "weekly-breakdown",
+  "slug": "/weekly-breakdown/week-2",
+  "permalink": "/docs/weekly-breakdown/week-2",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/your-project-name/tree/main/docs/docs/weekly-breakdown/week-2.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Week 2: ROS 2 Fundamentals"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Week 13: Capstone Integration and Project Presentations",
+    "permalink": "/docs/weekly-breakdown/week-13"
+  },
+  "next": {
+    "title": "Week 3: Digital Twin and Simulation",
+    "permalink": "/docs/weekly-breakdown/week-3"
+  }
+}

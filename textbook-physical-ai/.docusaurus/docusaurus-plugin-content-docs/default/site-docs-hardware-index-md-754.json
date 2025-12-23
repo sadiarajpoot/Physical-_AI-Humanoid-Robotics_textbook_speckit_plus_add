@@ -1,0 +1,26 @@
+{
+  "id": "hardware/index",
+  "title": "Hardware Requirements",
+  "description": "Overview",
+  "source": "@site/docs/hardware/index.md",
+  "sourceDirName": "hardware",
+  "slug": "/hardware/",
+  "permalink": "/docs/hardware/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/your-project-name/tree/main/docs/docs/hardware/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Hardware Requirements"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Learning Outcomes",
+    "permalink": "/docs/learning-outcomes/"
+  },
+  "next": {
+    "title": "Module 1: The Robotic Nervous System (ROS 2)",
+    "permalink": "/docs/modules/module-1"
+  }
+}

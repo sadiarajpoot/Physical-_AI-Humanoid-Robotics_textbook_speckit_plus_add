@@ -1,0 +1,26 @@
+{
+  "id": "weekly-breakdown/week-10",
+  "title": "Week 10: Learning and Adaptation in Humanoid Robots",
+  "description": "Overview",
+  "source": "@site/docs/weekly-breakdown/week-10.md",
+  "sourceDirName": "weekly-breakdown",
+  "slug": "/weekly-breakdown/week-10",
+  "permalink": "/docs/weekly-breakdown/week-10",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/your-project-name/tree/main/docs/docs/weekly-breakdown/week-10.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Week 10: Learning and Adaptation in Humanoid Robots"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Week 1: Introduction to Physical AI",
+    "permalink": "/docs/weekly-breakdown/week-1"
+  },
+  "next": {
+    "title": "Week 11: Sensor Integration and Perception",
+    "permalink": "/docs/weekly-breakdown/week-11"
+  }
+}
