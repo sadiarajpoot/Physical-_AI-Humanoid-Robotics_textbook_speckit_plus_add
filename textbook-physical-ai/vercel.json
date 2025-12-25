@@ -1,0 +1,14 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/docs/((?!\\.html$|\\.css$|\\.js$|\\.png$|\\.jpg$|\\.jpeg$|\\.gif$|\\.svg$|\\.ico$|\\.woff$|\\.woff2$|\\.ttf$).*)",
+      "destination": "/docs/index.html"
+    },
+    {
+      "source": "/((?!docs/|\\.html$|\\.css$|\\.js$|\\.png$|\\.jpg$|\\.jpeg$|\\.gif$|\\.svg$|\\.ico$|\\.woff$|\\.woff2$|\\.ttf$).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

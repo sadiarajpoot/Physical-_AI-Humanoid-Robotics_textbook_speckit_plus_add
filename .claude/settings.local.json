@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.specify/scripts/powershell/setup-plan.ps1 -Json)",
+      "Bash(.specify/scripts/powershell/check-prerequisites.ps1 -Json)",
+      "Bash(dir \"C:\\\\Users\\\\Sadia Khan\\\\OneDrive\\\\Documents\\\\hackthon\\\\specs\\\\001-book-embeddings-ingestion\")",
+      "Bash(dir \"C:\\\\Users\\\\Sadia Khan\\\\OneDrive\\\\Documents\\\\hackthon\\\\specs\\\\001-book-embeddings-ingestion\\\\checklists\")",
+      "Bash(.specify/scripts/powershell/check-prerequisites.ps1 -Json -RequireTasks -IncludeTasks)",
+      "Bash(pip install -e .)",
+      "Bash(python main.py --url https://physical-ai-humanoid-robotics-textb-seven-lime.vercel.app)",
+      "Bash(python -c \"from verifier import verify_storage_results; print\\(''Function exists''\\)\")",
+      "Bash(python -c \"import verifier; print\\([attr for attr in dir\\(verifier\\) if ''verify'' in attr.lower\\(\\)]\\)\")",
+      "Bash(python -c \"\nimport sys\nimport os\nsys.stdout.reconfigure\\(encoding=''utf-8''\\) if hasattr\\(sys.stdout, ''reconfigure''\\) else None\nos.system\\(''python main.py --url https://physical-ai-humanoid-robotics-textb-seven-lime.vercel.app --no-verify''\\)\n\")",
+      "Bash(python main.py --url https://physical-ai-humanoid-robotics-textb-seven-lime.vercel.app --verify)",
+      "Bash(curl -I https://physical-ai-humanoid-robotics-textb-seven-lime.vercel.app/docs/weekly-breakdown/week-10)",
+      "Bash(curl -s https://physical-ai-humanoid-robotics-textb-seven-lime.vercel.app/)",
+      "Bash(curl -m 30 -s -o /dev/null -w \"%{http_code}\" https://physical-ai-humanoid-robotics-textb-seven-lime.vercel.app/docs/intro)",
+      "Bash(curl -m 30 -s -o /dev/null -w \"%{http_code}: %{url_effective}\\\\n\" https://physical-ai-humanoid-robotics-textb-seven-lime.vercel.app/docs/weekly-breakdown/week-1)",
+      "Bash(curl -m 30 -s -o /dev/null -w \"%{http_code}: %{url_effective}\\\\n\" https://physical-ai-humanoid-robotics-textb-seven-lime.vercel.app/docs/modules/module-1)",
+      "Bash(curl -H \"User-Agent: Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36\" -m 45 -s -o /dev/null -w \"%{http_code}: %{url_effective}\\\\n\" https://physical-ai-humanoid-robotics-textb-seven-lime.vercel.app/docs/intro)",
+      "Bash(curl -s https://physical-ai-humanoid-robotics-textb-seven-lime.vercel.app/sitemap.xml)",
+      "Bash(curl -H \"Accept: text/html\" -H \"User-Agent: Mozilla/5.0 \\(compatible; Googlebot/2.1\\)\" -m 60 -s -o /dev/null -w \"%{http_code}: %{url_effective}\\\\n\" https://physical-ai-humanoid-robotics-textb-seven-lime.vercel.app/docs/assessments)",
+      "Bash(curl -L -H \"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\" -H \"User-Agent: Mozilla/5.0 \\(Windows NT 10.0; Win64; x64; rv:100.0\\) Gecko/20100101 Firefox/100.0\" -m 60 -s -o temp_page.html https://physical-ai-humanoid-robotics-textb-seven-lime.vercel.app/docs/intro)",
+      "Bash(curl -L -w \"HTTP Code: %{http_code}\\\\nURL: %{url_effective}\\\\nTime: %{time_total}s\\\\n\" -s -o /dev/null --max-time 60 https://physical-ai-humanoid-robotics-textb-seven-lime.vercel.app/docs/intro)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://physical-ai-humanoid-robotics-textb-seven-lime.vercel.app/)",
+      "Bash(curl -s https://physical-ai-humanoid-robotics-textb-seven-lime.vercel.app/docs/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://physical-ai-humanoid-robotics-textb-seven-lime.vercel.app/docs/)",
+      "Bash(curl -s -I https://physical-ai-humanoid-robotics-textb-seven-lime.vercel.app/docs/intro)",
+      "Bash(git add .)"
+    ]
+  }
+}

@@ -7,7 +7,7 @@ export default {
   "title": "Physical AI & Humanoid Robotics",
   "tagline": "An Interactive Book for AI and Computer Science Students",
   "favicon": "img/favicon.ico",
-  "url": "https://your-username.github.io",
+  "url": "https://physical-ai-humanoid-robotics-textb-seven-lime.vercel.app",
   "baseUrl": "/",
   "organizationName": "your-username",
   "projectName": "grok",
