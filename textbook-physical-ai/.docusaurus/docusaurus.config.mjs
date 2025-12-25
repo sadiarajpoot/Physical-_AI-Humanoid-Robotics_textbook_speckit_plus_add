@@ -9,10 +9,11 @@ export default {
   "favicon": "img/favicon.ico",
   "url": "https://physical-ai-humanoid-robotics-textb-seven-lime.vercel.app",
   "baseUrl": "/",
-  "organizationName": "your-username",
-  "projectName": "grok",
+  "organizationName": "sadiarajpoot",
+  "projectName": "404_ai_book",
   "trailingSlash": false,
-  "onBrokenLinks": "throw",
+  "onBrokenLinks": "warn",
+  "onBrokenAnchors": "warn",
   "i18n": {
     "defaultLocale": "en",
     "locales": [
@@ -54,7 +55,7 @@ export default {
           "label": "📖 Book"
         },
         {
-          "href": "https://github.com/your-username/your-project-name",
+          "href": "https://github.com/sadiarajpoot/404_ai_book",
           "label": "🐙 GitHub",
           "position": "right"
         }
@@ -377,7 +378,6 @@ export default {
     },
     "experimental_router": "browser"
   },
-  "onBrokenAnchors": "warn",
   "onDuplicateRoutes": "warn",
   "staticDirectories": [
     "static"

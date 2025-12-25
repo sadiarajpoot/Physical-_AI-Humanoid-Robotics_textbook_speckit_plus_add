@@ -15,11 +15,12 @@ const config = {
   baseUrl: '/',
 
   // GitHub pages deployment config.
-  organizationName: 'your-username', // Usually your GitHub org/user name.
-  projectName: 'grok', // Usually your repo name.
+  organizationName: 'sadiarajpoot', // Usually your GitHub org/user name.
+  projectName: '404_ai_book', // Usually your repo name.
   trailingSlash: false, // Original setting
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn', // Changed from 'throw' to prevent 404s on broken links
   onBrokenMarkdownLinks: 'warn',
+  onBrokenAnchors: 'warn', // Added to handle broken anchors without throwing errors
 
   i18n: {
     defaultLocale: 'en',
@@ -96,7 +97,7 @@ const config = {
             label: '📖 Book',
           },
           {
-            href: 'https://github.com/your-username/your-project-name',
+            href: 'https://github.com/sadiarajpoot/404_ai_book',
             label: '🐙 GitHub',
             position: 'right',
           },

@@ -3,11 +3,11 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/docs/((?!\\.html$|\\.css$|\\.js$|\\.png$|\\.jpg$|\\.jpeg$|\\.gif$|\\.svg$|\\.ico$|\\.woff$|\\.woff2$|\\.ttf$).*)",
+      "source": "/docs/:path*",
       "destination": "/docs/index.html"
     },
     {
-      "source": "/((?!docs/|\\.html$|\\.css$|\\.js$|\\.png$|\\.jpg$|\\.jpeg$|\\.gif$|\\.svg$|\\.ico$|\\.woff$|\\.woff2$|\\.ttf$).*)",
+      "source": "/:path*",
       "destination": "/index.html"
     }
   ]
