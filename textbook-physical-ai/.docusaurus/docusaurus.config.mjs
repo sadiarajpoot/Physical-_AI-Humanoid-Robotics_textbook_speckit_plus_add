@@ -10,7 +10,7 @@ export default {
   "url": "https://physical-ai-humanoid-robotics-textb-seven-lime.vercel.app",
   "baseUrl": "/",
   "organizationName": "sadiarajpoot",
-  "projectName": "404_ai_book",
+  "projectName": "Physical-_AI-Humanoid-Robotics_textbook_speckit_plus_add",
   "trailingSlash": false,
   "onBrokenLinks": "warn",
   "onBrokenAnchors": "warn",
@@ -29,7 +29,7 @@ export default {
         "docs": {
           "sidebarPath": "C:\\Users\\Sadia Khan\\OneDrive\\Documents\\hackthon\\textbook-physical-ai\\sidebars.js",
           "routeBasePath": "/docs",
-          "editUrl": "https://github.com/your-username/your-project-name/tree/main/docs"
+          "editUrl": "https://github.com/sadiarajpoot/Physical-_AI-Humanoid-Robotics_textbook_speckit_plus_add"
         },
         "blog": false,
         "theme": {
@@ -39,9 +39,22 @@ export default {
     ]
   ],
   "themes": [],
-  "plugins": [
-    null
-  ],
+  "customFields": {
+    "webpack": {
+      "jsConfig": {
+        "paths": [
+          "C:\\Users\\Sadia Khan\\OneDrive\\Documents\\hackthon\\textbook-physical-ai\\node_modules\\path-browserify\\index.js"
+        ]
+      },
+      "configure": {
+        "resolve": {
+          "fallback": {
+            "path": "C:\\Users\\Sadia Khan\\OneDrive\\Documents\\hackthon\\textbook-physical-ai\\node_modules\\path-browserify\\index.js"
+          }
+        }
+      }
+    }
+  },
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
     "navbar": {
@@ -55,7 +68,7 @@ export default {
           "label": "📖 Book"
         },
         {
-          "href": "https://github.com/sadiarajpoot/404_ai_book",
+          "href": "https://github.com/sadiarajpoot/Physical-_AI-Humanoid-Robotics_textbook_speckit_plus_add",
           "label": "🐙 GitHub",
           "position": "right"
         }
@@ -382,7 +395,7 @@ export default {
   "staticDirectories": [
     "static"
   ],
-  "customFields": {},
+  "plugins": [],
   "scripts": [],
   "headTags": [],
   "stylesheets": [],

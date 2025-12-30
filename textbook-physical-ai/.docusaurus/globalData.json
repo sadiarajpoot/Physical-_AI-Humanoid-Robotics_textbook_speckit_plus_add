@@ -196,10 +196,5 @@
       ],
       "breadcrumbs": true
     }
-  },
-  "docusaurus-plugin-chatbot": {
-    "default": {
-      "chatbotEnabled": true
-    }
   }
 }

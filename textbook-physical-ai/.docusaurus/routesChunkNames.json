@@ -1,166 +1,216 @@
 {
-  "/docs-87f": {
-    "__comp": "5e95c892",
+  "/__docusaurus/debug-5ff": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "aba21aa0"
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/config-5ba": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/content-a2b": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    },
+    "__props": "__props---docusaurus-debug-content-3-c-0-be2"
+  },
+  "/__docusaurus/debug/globalData-c3c": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/metadata-156": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/registry-88c": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/routes-000": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/ChatbotInjector-0ab": {
+    "__comp": "__comp---site-src-pages-chatbot-injector-jsx-9-c-7-59a",
+    "__context": {
+      "plugin": "plugin---chatbot-injectora-74-c11"
+    },
+    "config": "config---chatbot-injector-5-e-9-652"
+  },
+  "/docs-87f": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---docsaba-d7c"
     }
   },
   "/docs-9f7": {
-    "__comp": "a7bd4aaa",
-    "__props": "0058b4c6"
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---docs-005-788"
   },
   "/docs-a98": {
-    "__comp": "a94703ab"
+    "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/assessments-d17": {
-    "__comp": "17896441",
-    "content": "ce12a471"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-assessmentsce-1-b62"
   },
   "/docs/capstone-c08": {
-    "__comp": "17896441",
-    "content": "cd369fc1"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-capstonecd-3-7a4"
   },
   "/docs/hardware-3fb": {
-    "__comp": "17896441",
-    "content": "75439747"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-hardware-754-d98"
   },
   "/docs/intro-61d": {
-    "__comp": "17896441",
-    "content": "0e384e19"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-intro-0-e-3-be1"
   },
   "/docs/learning-outcomes-c9f": {
-    "__comp": "17896441",
-    "content": "b019c273"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-learning-outcomesb-01-196"
   },
   "/docs/modules/module-1-50b": {
-    "__comp": "17896441",
-    "content": "73bccfec"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-modules-module-173-b-04c"
   },
   "/docs/modules/module-2-63a": {
-    "__comp": "17896441",
-    "content": "b2983e5a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-modules-module-2-b-29-5a5"
   },
   "/docs/modules/module-3-38c": {
-    "__comp": "17896441",
-    "content": "7efad9fa"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-modules-module-37-ef-03b"
   },
   "/docs/modules/module-4-68c": {
-    "__comp": "17896441",
-    "content": "386de5ab"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-modules-module-4386-2a5"
   },
   "/docs/overview-c51": {
-    "__comp": "17896441",
-    "content": "fb87d503"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-overviewfb-8-d86"
   },
   "/docs/overview/why-physical-ai-890": {
-    "__comp": "17896441",
-    "content": "198dc869"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-overview-why-physical-ai-198-a62"
   },
   "/docs/technical-examples/gazebo-examples-0a4": {
-    "__comp": "17896441",
-    "content": "34faad77"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-technical-examples-gazebo-examples-34-f-2b8"
   },
   "/docs/technical-examples/isaac-examples-99c": {
-    "__comp": "17896441",
-    "content": "bb0e9c86"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-technical-examples-isaac-examplesbb-0-d1f"
   },
   "/docs/technical-examples/ros2-examples-ae2": {
-    "__comp": "17896441",
-    "content": "74e4b05f"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-technical-examples-ros-2-examples-74-e-9bf"
   },
   "/docs/technical-examples/vla-examples-6e3": {
-    "__comp": "17896441",
-    "content": "b1685acc"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-technical-examples-vla-examplesb-16-375"
   },
   "/docs/tutorial-basics/congratulations-70e": {
-    "__comp": "17896441",
-    "content": "822bd8ab"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-basics-congratulations-822-958"
   },
   "/docs/tutorial-basics/create-a-blog-post-315": {
-    "__comp": "17896441",
-    "content": "533a09ca"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-basics-create-a-blog-post-533-e85"
   },
   "/docs/tutorial-basics/create-a-document-f86": {
-    "__comp": "17896441",
-    "content": "1e4232ab"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-basics-create-a-document-1-e-4-078"
   },
   "/docs/tutorial-basics/create-a-page-9f6": {
-    "__comp": "17896441",
-    "content": "5c868d36"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-basics-create-a-page-5-c-8-e19"
   },
   "/docs/tutorial-basics/deploy-your-site-b91": {
-    "__comp": "17896441",
-    "content": "f55d3e7a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-basics-deploy-your-sitef-55-a3f"
   },
   "/docs/tutorial-basics/markdown-features-272": {
-    "__comp": "17896441",
-    "content": "18c41134"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-basics-markdown-features-18-c-a79"
   },
   "/docs/tutorial-extras/manage-docs-versions-a34": {
-    "__comp": "17896441",
-    "content": "dff1c289"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-extras-manage-docs-versionsdff-6d4"
   },
   "/docs/tutorial-extras/translate-your-site-739": {
-    "__comp": "17896441",
-    "content": "e44a2883"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-extras-translate-your-sitee-44-ddf"
   },
   "/docs/weekly-breakdown/week-1-dca": {
-    "__comp": "17896441",
-    "content": "948b39f2"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-weekly-breakdown-week-1948-04a"
   },
   "/docs/weekly-breakdown/week-10-4f4": {
-    "__comp": "17896441",
-    "content": "bfc49320"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-weekly-breakdown-week-10-bfc-b7a"
   },
   "/docs/weekly-breakdown/week-11-80e": {
-    "__comp": "17896441",
-    "content": "b2100215"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-weekly-breakdown-week-11-b-21-109"
   },
   "/docs/weekly-breakdown/week-12-c11": {
-    "__comp": "17896441",
-    "content": "9c20ca22"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-weekly-breakdown-week-129-c-2-25c"
   },
   "/docs/weekly-breakdown/week-13-ecd": {
-    "__comp": "17896441",
-    "content": "43965d8d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-weekly-breakdown-week-13439-c8c"
   },
   "/docs/weekly-breakdown/week-2-204": {
-    "__comp": "17896441",
-    "content": "b6806c73"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-weekly-breakdown-week-2-b-68-5d6"
   },
   "/docs/weekly-breakdown/week-3-858": {
-    "__comp": "17896441",
-    "content": "9bce7e8c"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-weekly-breakdown-week-39-bc-60c"
   },
   "/docs/weekly-breakdown/week-4-603": {
-    "__comp": "17896441",
-    "content": "a0867578"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-weekly-breakdown-week-4-a-08-abf"
   },
   "/docs/weekly-breakdown/week-5-597": {
-    "__comp": "17896441",
-    "content": "399c8454"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-weekly-breakdown-week-5399-779"
   },
   "/docs/weekly-breakdown/week-6-58c": {
-    "__comp": "17896441",
-    "content": "1412f9d0"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-weekly-breakdown-week-6141-7b3"
   },
   "/docs/weekly-breakdown/week-7-376": {
-    "__comp": "17896441",
-    "content": "6a2952ea"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-weekly-breakdown-week-76-a-2-c87"
   },
   "/docs/weekly-breakdown/week-8-573": {
-    "__comp": "17896441",
-    "content": "d90405da"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-weekly-breakdown-week-8-d-90-1d7"
   },
   "/docs/weekly-breakdown/week-9-2b2": {
-    "__comp": "17896441",
-    "content": "325a07e8"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-weekly-breakdown-week-9325-e23"
   },
   "/-2e1": {
-    "__comp": "c4f5d8e4",
+    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---chatbot-injectora-74-c11"
     },
-    "config": "5e9f5e1a"
+    "config": "config---chatbot-injector-5-e-9-652"
   }
 }
