@@ -10,17 +10,17 @@ from typing import List, Set
 from urllib.parse import urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
-from logger import logger
-from config import Config, get_config, validate_config
-from models import BookContent
-from utils import extract_urls_from_html, normalize_url, is_internal_link
-from crawler import Crawler
-from cli import parse_arguments
-from chunker import TextChunker
-from embedders import embed_text_chunks
-from vector_store import store_embeddings_in_qdrant
-from verifier import Verifier
-from resumer import create_resumer
+from ..utils.logger import logger
+from ..config.config import Config, get_config, validate_config
+from ..models.models import BookContent
+from ..utils.utils import extract_urls_from_html, normalize_url, is_internal_link
+from ..tools.crawler import Crawler
+from .cli import parse_arguments
+from ..utils.chunker import TextChunker
+from ..embedders.embedders import embed_text_chunks
+from ..tools.vector_store import store_embeddings_in_qdrant
+from ..tools.verifier import Verifier
+from ..tools.resumer import create_resumer
 
 
 def get_urls(base_url: str, max_pages: int = 1000) -> Set[str]:

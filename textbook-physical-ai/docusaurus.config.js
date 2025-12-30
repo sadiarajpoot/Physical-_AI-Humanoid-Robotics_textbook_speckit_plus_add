@@ -16,7 +16,7 @@ const config = {
 
   // GitHub pages deployment config.
   organizationName: 'sadiarajpoot', // Usually your GitHub org/user name.
-  projectName: '404_ai_book', // Usually your repo name.
+  projectName: 'Physical-_AI-Humanoid-Robotics_textbook_speckit_plus_add', // Usually your repo name.
   trailingSlash: false, // Original setting
   onBrokenLinks: 'warn', // Changed from 'throw' to prevent 404s on broken links
   onBrokenMarkdownLinks: 'warn',
@@ -38,7 +38,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/your-username/your-project-name/tree/main/docs',
+            'https://github.com/sadiarajpoot/Physical-_AI-Humanoid-Robotics_textbook_speckit_plus_add',
         },
         blog: false, // Disable blog
         theme: {
@@ -52,34 +52,22 @@ const config = {
     // ... Your other themes.
   ],
 
-  plugins: [
-    // Plugin to add the chatbot to the site
-    async function myPlugin(context, options) {
-      return {
-        name: 'docusaurus-plugin-chatbot',
-        configureWebpack(config, isServer, utils) {
-          return {
-            resolve: {
-              fallback: {
-                path: require.resolve('path-browserify'),
-              },
-            },
-          };
+
+
+  customFields: {
+    webpack: {
+      jsConfig: {
+        paths: [require.resolve('path-browserify')],
+      },
+      configure: {
+        resolve: {
+          fallback: {
+            path: require.resolve('path-browserify'),
+          },
         },
-        loadContent: async function () {
-          // This method is called during the content load phase.
-          // You can fetch remote content here.
-          return {};
-        },
-        contentLoaded: async function ({ content, actions }) {
-          const { setGlobalData } = actions;
-          setGlobalData({
-            chatbotEnabled: true,
-          });
-        },
-      };
+      },
     },
-  ],
+  },
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -97,7 +85,7 @@ const config = {
             label: '📖 Book',
           },
           {
-            href: 'https://github.com/sadiarajpoot/404_ai_book',
+            href: 'https://github.com/sadiarajpoot/Physical-_AI-Humanoid-Robotics_textbook_speckit_plus_add',
             label: '🐙 GitHub',
             position: 'right',
           },

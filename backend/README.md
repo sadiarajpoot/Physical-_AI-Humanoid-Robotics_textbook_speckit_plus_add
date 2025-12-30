@@ -1,60 +1,65 @@
-# Book Embeddings Ingestion Tool
+# Backend Structure
 
-A Python application to crawl Docusaurus book pages, generate Cohere embeddings, and store them in Qdrant Cloud Free Tier.
+This directory contains all backend components for the RAG chatbot system, organized into logical modules:
 
-## Features
+## Directory Structure
 
-- Crawls all pages from a deployed Docusaurus book site
-- Extracts clean text content while filtering out HTML tags and navigation elements
-- Chunks text appropriately for embedding generation
-- Generates embeddings using Cohere models
-- Stores embeddings with metadata in Qdrant vector database
-- Idempotent operation (safe to run multiple times)
-- Verifiable ingestion process
-
-## Requirements
-
-- Python 3.11+
-- UV package manager (optional but recommended)
-
-## Installation
-
-1. Clone the repository
-2. Navigate to the `backend` directory
-3. Install dependencies:
-
-```bash
-uv sync  # If using UV
-# OR
-pip install -r requirements.txt  # If using pip directly
+```
+backend/
+├── cli/              # Command-line interface components
+│   ├── cli.py        # CLI utilities and commands
+│   └── main.py       # Main application entry point
+├── config/           # Configuration management
+│   └── config.py     # Configuration classes and loading
+├── embedders/        # Embedding and vectorization components
+│   └── embedders.py  # Cohere and other embedding implementations
+├── models/           # Data models and schemas
+│   └── models.py     # Pydantic models and data structures
+├── parsers/          # HTML/content parsing utilities
+│   └── parsers.py    # Content extraction from web pages
+├── retrievers/       # RAG retrieval components
+│   ├── retriever.py  # Main RAG retriever implementation
+│   └── rag_retriever.py # RAG-specific retrieval logic
+├── tools/            # Utility tools and services
+│   ├── crawler.py    # Web crawling functionality
+│   ├── discover_urls.py # URL discovery utilities
+│   ├── resumer.py    # Resumable operations
+│   ├── vector_store.py # Vector database operations
+│   └── verifier.py   # Data verification utilities
+├── utils/            # General utility functions
+│   ├── chunker.py    # Text chunking utilities
+│   ├── exceptions.py # Custom exception classes
+│   ├── logger.py     # Logging utilities
+│   ├── utils.py      # General utility functions
+│   └── validators.py # Data validation utilities
+├── tests/            # Test files
+│   ├── test_crawling.py
+│   ├── test_e2e.py
+│   ├── test_embeddings.py
+│   └── test_storage.py
+├── _config/          # Configuration files
+│   ├── .env          # Environment variables
+│   ├── .gitignore    # Git ignore rules
+│   ├── pyproject.toml # Project configuration
+│   └── book_embeddings_ingestion.egg-info # Package info
+├── _docs/            # Documentation files
+├── _logs/            # Log files
+│   └── book_ingestion.log # Ingestion logs
+└── __pycache__/      # Python cache files
 ```
 
-## Configuration
+## Key Components
 
-Create a `.env` file in the backend directory with the following variables:
-
-```env
-COHERE_API_KEY=your_cohere_api_key_here
-QDRANT_API_KEY=your_qdrant_api_key_here
-QDRANT_HOST=your_qdrant_cluster_url_here
-QDRANT_COLLECTION_NAME=book_embeddings
-BOOK_URL=https://your-book-url.vercel.app
-```
+- **CLI**: Command-line interface for ingestion and management tasks
+- **Config**: Centralized configuration management
+- **Embedders**: Text embedding and vectorization services
+- **Models**: Data structures and validation schemas
+- **Parsers**: HTML parsing and content extraction
+- **Retrievers**: RAG-based information retrieval
+- **Tools**: Supporting utilities and services
+- **Utils**: General-purpose helper functions
+- **Tests**: Unit and integration tests
 
 ## Usage
 
-Run the ingestion pipeline:
-
-```bash
-python main.py --url https://your-book-url.vercel.app
-```
-
-Or use environment variables to specify the book URL:
-
-```bash
-python main.py
-```
-
-## License
-
-[Specify your license here]
+Most components can be imported directly from their respective modules. The main entry point is typically through `cli/main.py` for command-line operations or through the API endpoints in the main project.

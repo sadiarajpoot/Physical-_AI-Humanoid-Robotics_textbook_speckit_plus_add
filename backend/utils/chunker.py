@@ -1,6 +1,6 @@
 from typing import List
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from models import TextChunk
+from ..models.models import TextChunk
 import uuid
 
 

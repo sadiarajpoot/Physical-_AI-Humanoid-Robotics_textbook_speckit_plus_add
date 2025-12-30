@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 from typing import List, Dict, Any
-from models import BookContent
+from ..models.models import BookContent
 import re
 
 
@@ -17,20 +17,48 @@ def extract_clean_text_from_html(html_content: str, url: str = "") -> str:
     """
     soup = BeautifulSoup(html_content, 'html.parser')
 
-    # Remove navigation and UI elements that are common in Docusaurus sites
-    for element in soup.find_all(['nav', 'header', 'footer', 'aside']):
-        element.decompose()
+    # First, try to find the main content area in Docusaurus sites
+    # Look for article tag which typically contains the main content in Docusaurus
+    main_content = soup.find('article')
 
-    # Remove elements with common Docusaurus class names for navigation/components
-    for element in soup.find_all(class_=re.compile(r'navbar|menu|toc|pagination|footer|header|nav')):
-        element.decompose()
+    # If not found in article, try to find the main content container with specific Docusaurus classes
+    if not main_content:
+        main_content = soup.find(class_=re.compile(r'theme-doc-markdown|markdown'))
 
-    # Remove script and style elements
-    for script in soup(["script", "style", "meta", "link"]):
-        script.decompose()
+    # If still not found, look for the content within docItemContainer or docMainContainer
+    if not main_content:
+        main_content = soup.find(class_=re.compile(r'docItemContainer|docMainContainer|main-wrapper'))
 
-    # Get text content and clean it up
-    text = soup.get_text()
+    if main_content:
+        # If we found the main content area, work with that instead of the full document
+        content_soup = BeautifulSoup(str(main_content), 'html.parser')
+
+        # Remove only specific elements within the content area that are not needed
+        # Remove UI elements but keep content elements like headers and paragraphs
+        for element in content_soup.find_all(class_=re.compile(r'menu|toc|pagination|footer|header|nav|breadcrumbs|theme-edit-this-page|tocCollapsible')):
+            element.decompose()
+
+        # Remove script and style elements
+        for script in content_soup(["script", "style", "meta", "link"]):
+            script.decompose()
+
+        text = content_soup.get_text()
+    else:
+        # Fallback to original method if no main content area found
+        # Remove navigation and UI elements that are common in Docusaurus sites
+        for element in soup.find_all(['nav', 'header', 'footer', 'aside']):
+            element.decompose()
+
+        # Remove elements with common Docusaurus class names for navigation/components
+        for element in soup.find_all(class_=re.compile(r'navbar|menu|toc|pagination|footer|header|nav')):
+            element.decompose()
+
+        # Remove script and style elements
+        for script in soup(["script", "style", "meta", "link"]):
+            script.decompose()
+
+        # Get text content and clean it up
+        text = soup.get_text()
 
     # Clean up whitespace
     lines = (line.strip() for line in text.splitlines())

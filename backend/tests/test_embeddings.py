@@ -3,9 +3,9 @@ Basic tests for embedding functionality.
 These tests are placeholders and would need actual API keys for full testing.
 """
 import pytest
-from models import TextChunk
-from embedders import validate_chunk_size, CohereEmbedder
-from config import Config
+from ..models.models import TextChunk
+from ..embedders.embedders import validate_chunk_size, CohereEmbedder
+from ..config.config import Config
 
 
 def test_chunk_validation():

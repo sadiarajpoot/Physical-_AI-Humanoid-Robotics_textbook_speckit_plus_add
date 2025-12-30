@@ -3,9 +3,9 @@ Basic tests for storage functionality.
 These tests are placeholders and would need actual Qdrant instance for full testing.
 """
 import pytest
-from models import Embedding, TextChunk
-from vector_store import QdrantVectorStore, store_embeddings_in_qdrant
-from config import Config
+from ..models.models import Embedding, TextChunk
+from ..tools.vector_store import QdrantVectorStore, store_embeddings_in_qdrant
+from ..config.config import Config
 
 
 def test_embedding_creation():

@@ -1,9 +1,9 @@
 import cohere
 from typing import List, Dict, Any
-from models import TextChunk, Embedding
-from exceptions import EmbeddingError, RateLimitError
-from logger import logger
-from config import Config
+from ..models.models import TextChunk, Embedding
+from ..utils.exceptions import EmbeddingError, RateLimitError
+from ..utils.logger import logger
+from ..config.config import Config
 import time
 
 

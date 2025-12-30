@@ -5,7 +5,7 @@ These tests are placeholders and would need actual implementation with mock data
 import pytest
 from models import BookContent
 from crawler import Crawler
-from config import Config
+from ..config.config import Config
 
 
 def test_book_content_creation():

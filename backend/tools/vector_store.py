@@ -1,11 +1,13 @@
 from qdrant_client import QdrantClient
 from qdrant_client.http import models
 from typing import List, Optional, Dict, Any
-from models import Embedding, QdrantCollection
-from exceptions import QdrantError
-from logger import logger
-from config import Config
+from ..models.models import Embedding, QdrantCollection
+from ..utils.exceptions import QdrantError
+from ..utils.logger import logger
+from ..config.config import Config
 import uuid
+import time
+from functools import wraps
 
 
 class QdrantVectorStore:
@@ -20,12 +22,16 @@ class QdrantVectorStore:
             config: Configuration object containing Qdrant settings
         """
         self.config = config
-        self.client = QdrantClient(
+        self.qdrant_client = QdrantClient(
             url=config.qdrant_host,
             api_key=config.qdrant_api_key,
             prefer_grpc=False  # Using HTTP for compatibility
         )
         self.collection_name = config.qdrant_collection_name
+
+        # Rate limiting configuration
+        self._last_request_time = 0
+        self._min_request_interval = config.rate_limit_delay  # from config
 
     def create_collection(self, vector_size: int = 1024, distance: str = "Cosine") -> bool:
         """
@@ -41,7 +47,7 @@ class QdrantVectorStore:
         try:
             # Check if collection already exists
             try:
-                self.client.get_collection(self.collection_name)
+                self.qdrant_client.get_collection(self.collection_name)
                 logger.info(f"Collection '{self.collection_name}' already exists")
                 return True
             except:
@@ -49,7 +55,7 @@ class QdrantVectorStore:
                 pass
 
             # Create the collection
-            self.client.create_collection(
+            self.qdrant_client.create_collection(
                 collection_name=self.collection_name,
                 vectors_config=models.VectorParams(
                     size=vector_size,
@@ -116,7 +122,7 @@ class QdrantVectorStore:
                     points.append(point)
 
                 # Upsert the points to Qdrant
-                self.client.upsert(
+                self.qdrant_client.upsert(
                     collection_name=self.collection_name,
                     points=points
                 )
@@ -151,7 +157,7 @@ class QdrantVectorStore:
         for embedding in embeddings:
             # Check if a point with the same source_url and chunk_id already exists
             try:
-                results = self.client.scroll(
+                results = self.qdrant_client.scroll(
                     collection_name=self.collection_name,
                     scroll_filter=models.Filter(
                         must=[
@@ -192,20 +198,21 @@ class QdrantVectorStore:
             List[Dict[str, Any]]: List of similar embeddings with their metadata
         """
         try:
-            results = self.client.search(
+            response = self.qdrant_client.query_points(
                 collection_name=self.collection_name,
-                query_vector=query_vector,
+                query=query_vector,
                 limit=top_k
             )
 
-            # Format results
+            # Format results - query_points returns a QueryResponse object
+            # The results are in the 'points' attribute
             formatted_results = []
-            for result in results:
+            for point in response.points:
                 formatted_result = {
-                    "id": result.id,
-                    "score": result.score,
-                    "payload": result.payload,
-                    "vector": result.vector
+                    "id": point.id,
+                    "score": point.score,
+                    "payload": point.payload,
+                    "vector": point.vector
                 }
                 formatted_results.append(formatted_result)
 
@@ -223,9 +230,9 @@ class QdrantVectorStore:
             Dict[str, Any]: Collection information including point count
         """
         try:
-            collection_info = self.client.get_collection(self.collection_name)
+            collection_info = self.qdrant_client.get_collection(self.collection_name)
             return {
-                "name": collection_info.config.params.vectors.size,
+                "name": self.collection_name,
                 "vector_size": collection_info.config.params.vectors.size,
                 "distance": collection_info.config.params.vectors.distance,
                 "point_count": collection_info.points_count
@@ -242,7 +249,7 @@ class QdrantVectorStore:
             bool: True if successful
         """
         try:
-            self.client.delete(
+            self.qdrant_client.delete(
                 collection_name=self.collection_name,
                 points_selector=models.FilterSelector(
                     filter=models.Filter()

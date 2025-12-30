@@ -4,12 +4,12 @@ These tests are placeholders and would need actual services for full testing.
 """
 import pytest
 from unittest.mock import Mock, patch, MagicMock
-from models import BookContent, TextChunk, Embedding
-from config import Config
-from crawler import Crawler
-from chunker import TextChunker
-from embedders import CohereEmbedder
-from vector_store import QdrantVectorStore
+from ..models.models import BookContent, TextChunk, Embedding
+from ..config.config import Config, validate_config
+from ..tools.crawler import Crawler
+from ..utils.chunker import TextChunker
+from ..embedders.embedders import CohereEmbedder
+from ..tools.vector_store import QdrantVectorStore
 
 
 def test_e2e_pipeline_flow():
